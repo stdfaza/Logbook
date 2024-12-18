@@ -30,3 +30,20 @@ class EventTree {
         }
     }
 }
+public Event search(String name) {
+    return searchRec(root, name);
+}
+
+private Event searchRec(TreeNode root, String name) {
+    if (root == null) {
+        return null;
+    }
+    if (root.event.getName().equalsIgnoreCase(name)) {
+        return root.event;
+    }
+    Event leftSearch = searchRec(root.left, name);
+    if (leftSearch != null) {
+        return leftSearch;
+    }
+    return searchRec(root.right, name);
+}
