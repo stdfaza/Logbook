@@ -2,7 +2,7 @@
 Membuat masing masing projek disini
 ![Logo]()
 
-##Bagi-bagi Tugas
+##Anggota Projek
 - Amel :
 - Faza :
 - Rama : 
